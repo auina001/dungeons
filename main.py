@@ -1,4 +1,3 @@
-from asyncio import shield
 from monster import Monster, Hoved
 import random
 
@@ -28,6 +27,7 @@ while True:
 
     extra_damage = 1
     protection = 2
+    ability = ""
     if (ability_counter < 2):
         ability = input("Vil du velge en ability (maks to per runde): heal, shield, extra damage: ")
 
