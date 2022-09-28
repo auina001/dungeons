@@ -52,6 +52,13 @@ while True:
     hovedkarakter.lose_hp(hoved_damage)
     
     if (monstere[level].hp <= 0):
+        monstere[level].hp = 0
+    if (hovedkarakter.hp <= 0):
+        hovedkarakter.hp = 0
+
+    print("Din hp:", hovedkarakter.hp, "Monsterets hp:", monstere[level].hp)
+
+    if (monstere[level].hp == 0):
         if (level == 2):
             print("Nice, du vant!")
             exit()
@@ -60,8 +67,8 @@ while True:
         start_line = False
         continue
 
-    if (hovedkarakter.hp <= 0):
+    if (hovedkarakter.hp == 0):
         print("You dead", monstere[level].navn+":", "din noob")
         exit()
 
-    print("Din hp:", hovedkarakter.hp, "Monsterets hp:", monstere[level].hp)
+    
