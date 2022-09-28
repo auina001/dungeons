@@ -1,3 +1,5 @@
+# Av Onat og August
+
 from monster import Monster, Hoved
 import random
 
