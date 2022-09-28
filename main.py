@@ -8,9 +8,9 @@ print("Welcome to dungeons and dragons")
 
 monstere = [0, 0, 0]
 
-monstere[0] = m("bill gates", 80, "Jeg kommer til å eliminere deg med min windows AI")
-monstere[1] = m("jeff bezos", 120, "Jeg bruker steroids og kan kjøpe deg")
-monstere[2] = m("elon musk", 150, "Jeg kommer til å sende deg til Mars")
+monstere[0] = m("Bill Gates", 80, "Jeg kommer til å eliminere deg med min windows AI")
+monstere[1] = m("Jeff Bezos", 120, "Jeg bruker steroids og kan kjøpe deg")
+monstere[2] = m("Elon Musk", 150, "Jeg kommer til å sende deg til Mars")
 
 hovedkarakter = Hoved("kjetil", 100)
 
@@ -68,7 +68,7 @@ while True:
         continue
 
     if (hovedkarakter.hp == 0):
-        print("You dead", monstere[level].navn+":", "din noob")
+        print("You dead.", monstere[level].navn+":", "'Noob'")
         exit()
 
     
