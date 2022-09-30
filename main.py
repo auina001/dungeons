@@ -41,8 +41,10 @@ while True:
         print("Du healet og har nå", hovedkarakter.hp, "liv")
     elif (ability == "extra damage"):
         extra_damage = 2
+        print("Du tar extra damage")
     elif (ability == "shield"):
         protection = 1
+        print("Du bruker shield og vil miste mindre liv")
     if (ability != ""):
         ability_counter += 1
 
