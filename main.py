@@ -4,17 +4,17 @@ from monster import Monster, Hoved
 import random
 
 level = 0
+hovedkarakter = Hoved("kjetil", 100)
 
 m = Monster
-print("Welcome to dungeons and dragons")
-
+print("Velkommen til dungeons and dragons. Jeg er hovedkarakteren,", hovedkarakter.navn, ":)")
+print("Vi er i fare og må ut av dette rommet, men Bill Gates, Jeff bezos og Elon Musk har nøkklene!!!!!")
+print("Vent jeg hører noen snakker...")
 monstere = [0, 0, 0]
 
 monstere[0] = m("Bill Gates", 80, "Jeg kommer til å eliminere deg med min windows AI")
 monstere[1] = m("Jeff Bezos", 120, "Jeg bruker steroids og kan kjøpe deg")
 monstere[2] = m("Elon Musk", 150, "Jeg kommer til å sende deg til Mars")
-
-hovedkarakter = Hoved("kjetil", 100)
 
 protection = 0
 extra_damage = 1
@@ -64,10 +64,9 @@ while True:
         if (level == 2):
             print("Nice, du vant!")
             exit()
-        print(monstere[level].navn, "døde")
+        print("RIP", monstere[level].navn, "døde")
         level += 1
         start_line = False
-        continue
 
     if (hovedkarakter.hp == 0):
         print("You dead.", monstere[level].navn+":", "'Noob'")
