@@ -4,7 +4,7 @@ from monster import Monster, Hoved
 import random
 
 level = 0
-hovedkarakter = Hoved("kjetil", 100)
+hovedkarakter = Hoved("kjetil", 130)
 
 m = Monster
 print("Velkommen til dungeons and dragons. Jeg er hovedkarakteren,", hovedkarakter.navn, ":)")
